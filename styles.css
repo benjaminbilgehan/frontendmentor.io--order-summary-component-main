@@ -1,0 +1,359 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* variables */
+:root {
+    /* ### Primary Colors */
+
+    --clr-Pale-blue: hsl(225, 100%, 94%);
+    --clr-Bright-blue: hsl(245, 75%, 52%);
+
+    /* ### Neutral */
+
+    --clr-Very-pale-blue: hsl(225, 100%, 98%);
+    --clr-Desaturated-blue: hsl(224, 23%, 55%);
+    --clr-Dark-blue: hsl(223, 47%, 23%);
+    --clr-white: #fff;
+
+    /* Typography */
+    --fs-050: 13px;
+    --fs-100: 14px;
+    --fs-200: 15px;
+    --fs-300: 16px;
+    --fs-400: 28px;
+
+
+    --fw-500: 500;
+    --fw-700: 700;
+    --fw-900: 900;
+
+    --ff-red-hat: 'Red Hat Display', sans serif;
+
+}
+
+html {
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--clr-Pale-blue);
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 450px;
+
+
+}
+
+.banner-photo {}
+
+
+.container {
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    border-radius: 20px;
+    height: 697px;
+    background-color: var(--clr-Very-pale-blue);
+    overflow: hidden;
+
+}
+
+.attribution {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    font-size: var(--fs-400);
+    font-weight: var(--fw-900);
+    font-family: var(--ff-red-hat);
+    color: var(--clr-Dark-blue);
+    padding: 4.5px;
+}
+
+p {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-500);
+    font-family: var(--ff-red-hat);
+    color: var(--clr-Desaturated-blue);
+    font-style: normal;
+    line-height: 26px;
+
+}
+
+.annual-plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0;
+
+}
+
+.title-plan {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-900);
+    font-family: var(--ff-red-hat);
+    color: var(--clr-Dark-blue);
+
+}
+
+.price-info {
+    font-size: var(--fs-300);
+    font-weight: var(--fw-500);
+    font-family: var(--ff-red-hat);
+    color: var(--clr-Desaturated-blue);
+    font-style: normal;
+}
+
+.change-link {
+    font-size: var(--fs-100);
+    font-weight: var(--fw-700);
+    font-family: var(--ff-red-hat);
+    color: var(--clr-Bright-blue);
+    font-style: normal;
+}
+
+
+.music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1em;
+}
+
+.payment-btn {
+
+    font-size: var(--fs-200);
+    font-weight: var(--fw-900);
+    font-style: normal;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    border-radius: 11px;
+    color: var(--clr-white);
+    font-family: var(--ff-red-hat);
+    background-color: var(--clr-Bright-blue);
+    height: 50px;
+    width: 354px;
+    border: none;
+    margin-bottom: 32px;
+}
+
+.cancel-link {
+    font-size: var(--fs-200);
+    font-weight: var(--fw-900);
+    font-style: normal;
+    color: var(--clr-Desaturated-blue);
+    text-decoration: none;
+    font-family: var(--ff-red-hat);
+}
+
+.payment-button-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1.1em; */
+}
+
+.container-info {
+
+    padding: 0 48px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 477px;
+
+}
+
+.list li:nth-child(1) {
+    padding-bottom: 6px;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .container {
+        height: 567px;
+    }
+
+    .container-info {
+        padding: 0;
+        height: 408px;
+    }
+
+    .card {
+        width: 327px;
+
+    }
+
+    .banner-photo img {
+        width: 327px;
+    }
+
+    h2,
+    p {
+        padding: 0 32px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: var(--fs-100);
+    }
+
+    .annual-plan {
+        padding: 0 24px;
+    }
+
+    .title-plan,
+    .price-info {
+        font-size: var(--fs-100);
+    }
+
+    .change-link {
+        font-size: var(--fs-050);
+    }
+
+    .payment-btn {
+        width: 279px;
+    }
+}
